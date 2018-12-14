@@ -1,4 +1,4 @@
-package com.rdfirebase;
+package com.rdfirebase.activities.home;
 
 import android.content.Intent;
 import android.os.Build;
@@ -17,12 +17,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.rdfirebase.R;
+import com.rdfirebase.activities.authentication.LoginActivity;
+import com.rdfirebase.activities.authentication.SignupActivity;
+import com.rdfirebase.activities.storage.StorageActivity;
 
 public class MainActivity extends AppCompatActivity
 {
 
     private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
-            changeEmail, changePassword, sendEmail, remove, signOut;
+            changeEmail, changePassword, sendEmail, remove, signOut,storage_button;
 
     private EditText oldEmail, newEmail, password, newPassword;
     private ProgressBar progressBar;
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity
         sendEmail = findViewById(R.id.send);
         remove = findViewById(R.id.remove);
         signOut = findViewById(R.id.sign_out);
+        storage_button = findViewById(R.id.storage_button);
 
         oldEmail = findViewById(R.id.old_email);
         newEmail = findViewById(R.id.new_email);
@@ -246,6 +251,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 signOut();
+            }
+        });
+
+        storage_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               startActivity(new Intent(MainActivity.this,StorageActivity.class));
             }
         });
 

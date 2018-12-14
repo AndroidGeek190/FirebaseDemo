@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical">
-    <LinearLayout
-        android:id="@+id/layout_button"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true"
-        android:weightSum="2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnChoose"
-            android:text="Choose"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/btnUpload"
-            android:text="Upload"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +18,7 @@
                 android:layout_height="150dp"
                 android:background="@color/iv_back">
                 <ImageView
-                    android:id="@+id/thumb_imgView1"
+                    android:id="@+id/img1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -51,9 +28,10 @@
                 android:background="@color/iv_back"
                 android:layout_marginLeft="5dp">
                 <ImageView
-                    android:id="@+id/thumb_imgView2"
+                    android:id="@+id/img2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="100dp"
@@ -61,7 +39,7 @@
                 android:background="@color/iv_back"
                 android:layout_marginLeft="5dp">
                 <ImageView
-                    android:id="@+id/thumb_imgView3"
+                    android:id="@+id/img3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     />
@@ -78,7 +56,7 @@
                 android:layout_height="150dp"
                 android:background="@color/iv_back">
                 <ImageView
-                    android:id="@+id/thumb_imgView4"
+                    android:id="@+id/img4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -88,7 +66,7 @@
                 android:layout_marginLeft="5dp"
                 android:background="@color/iv_back">
                 <ImageView
-                    android:id="@+id/thumb_imgView5"
+                    android:id="@+id/img5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -98,7 +76,7 @@
                 android:layout_marginLeft="5dp"
                 android:background="@color/iv_back">
                 <ImageView
-                    android:id="@+id/thumb_imgView6"
+                    android:id="@+id/img6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
